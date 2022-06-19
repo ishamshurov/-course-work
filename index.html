@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Магазин Футболок</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+<div class="wrapper">
+
+<section class="hero">
+	<header class="header">
+		<a href="#" class="logo">
+			<img src="img/content/logos/logo-main.png" class="logo__pic" alt="logo">
+		</a>
+		<a href="#" class="mail">
+			<div class="mail__title"> Сайт создал Шамшуров Илья</div>
+			<div class="mail__content">i.shamshurov@mail.ru</div>
+		</a>
+	</header>
+	<div class="hero__content">
+		<ul class="fade-slider">
+			<li class="fade-slider__item fade-slider__item--style-tshirts
+		fade-slider__item--visible">
+				<div class="fade-slider__text">
+					<h1 class="lined-text">
+						<span class="lined-text__word">три</span>
+						<span class="lined-text__word">футболки</span>
+						<span class="lined-text__word lined-text__word--coloryellow">по цене</span>
+						<span class="lined-text__word lined-text__word--coloryellow">двух</span>
+					</h1>
+				</div>
+			</li>
+			<li class="fade-slider__item fade-slider__item--style-games ">
+				<div class="fade-slider__text">
+					<h1 class="lined-text lined-text--no-indent">
+						<span class="lined-text__word">Любимые игры</span>
+						<span class="lined-text__word lined-text__word--coloryellow">на лучших футболках</span>
+					</h1>
+				</div>
+			</li>
+			<li class="fade-slider__item fade-slider__item--style-presents">
+				<div class="fade-slider__text">
+					<h1 class="lined-text lined-text--no-indent">
+						<span class="lined-text__word">Подарки</span>
+						<span class="lined-text__word lined-text__word--coloryellow">для любимых</span>
+					</h1>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<aside class="sidebar">
+        <a href="#" class="sidebar__hamburger">
+          <svg class="sidebar__hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        </a>
+        <div class="sidebar__header">
+          <a href="#" class="logo">
+            <img src="./img/content/logos/logo-main.png" alt="" class="logo__image">
+          </a>
+            <a href="#" class="sidebar__close">
+              <svg class="sidebar__hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+            </a>
+        </div>
+        <nav class="side-menu sidebar__menu">
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Детская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Мужская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Женская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Популярные принты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Новые принты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Специальные предложения</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Скоро в продаже</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>	
+</section>
+<section class="products">
+    <div class="container">
+        <ul class="filter">
+          <li class="filter__item filter__item--active">
+            <a href="#" data-filter="popular" class="filter__link">Популярное</a>
+          </li>
+          <li class="filter__item">
+            <a href="#" data-filter="new" class="filter__link">Особые</a>
+          </li>
+          <li class="filter__item">
+            <a href="#" data-filter="bestsellers" class="filter__link">Бестселлеры</a>
+          </li>
+          <li class="filter__item">
+            <a href="#" data-filter="specials" class="filter__link">Специальные предложения</a>
+          </li>
+          <li class="filter__item">
+            <a href="#" data-filter="soon" class="filter__link">Скоро в продаже</a>
+          </li>
+        </ul>
+        <ul class="products__list">
+          <li class="products__item new bestsellers">
+            <div class="products__price">
+              <div class="products__price-amount">1 800</div>
+            </div>
+            <div class="products__content">
+              <img src="./img/tshirts/tshirt_01.png" alt="bo-jack tshirt" class="products__img">
+              <div class="products__desc">
+                <div class="products__desc-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <a href="#" class="btn">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="products__item new specials soon">
+            <div class="products__price">
+              <div class="products__price-amount">1 800</div>
+            </div>
+            <div class="products__content">
+              <img src="./img/tshirts/tshirt_02.png" alt="bo-jack tshirt" class="products__img">
+              <div class="products__desc">
+                <div class="products__desc-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="products__item new popular specials products__item--color-black products__item--size-double">
+            <div class="products__price">
+              <div class="products__price-amount">1 800</div>
+            </div>
+            <div class="products__content">
+              <img src="./img/tshirts/tshirt_03.png" alt="bo-jack tshirt" class="products__img">
+              <div class="products__desc">
+                <div class="products__desc-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="products__item new popular soon products__item--color-black products__item--size-double">
+            <div class="products__price">
+              <div class="products__price-amount">1 800</div>
+            </div>
+            <div class="products__content">
+              <img src="./img/tshirts/tshirt_04.png" alt="bo-jack tshirt" class="products__img">
+              <div class="products__desc">
+                <div class="products__desc-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="products__item new specials soon">
+            <div class="products__price">
+              <div class="products__price-amount">1 800</div>
+            </div>
+            <div class="products__content">
+              <img src="./img/tshirts/tshirt_05.png" alt="bo-jack tshirt" class="products__img">
+              <div class="products__desc">
+                <div class="products__desc-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="products__item new">
+            <div class="products__price">
+              <div class="products__price-amount">1 800</div>
+            </div>
+            <div class="products__content">
+              <img src="./img/tshirts/tshirt_06.png" alt="bo-jack tshirt" class="products__img">
+              <div class="products__desc">
+                <div class="products__desc-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+            </div>
+        </li>
+    </ul>
+    </div>
+</section>
+
+<section class="collections">
+	<div class="container">
+		<ul class="collections__list">
+			<li class="collections__item collections__item--type-guys">
+				<a href="#" class="collections__link">
+					<h2 class="collections__title">Мужская Коллекция</h2>
+					<div class="collections__desc">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero!
+					</div>
+					<div class="btn">Посмотреть</div>
+				</a>
+			</li>
+			<li class="collections__item collections__item--type-girls">
+				<a href="#" class="collections__link">
+					<h2 class="collections__title">Женская Коллекция</h2>
+					<div class="collections__desc">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero!
+					</div>
+					<div class="btn">Посмотреть</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container footer__container">
+		<nav class="site-menu">
+			<ul class="site-menu__sections">
+				<li class="site-menu__col">
+					<h3 class="site-menu__title">Информация</h3>
+					<ul class="site-menu__list">
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">О магазине</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Адресса магазинов</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Как сделать заказ?</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Обмен и возврат</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Отзывы</a>
+						</li>
+					</ul>
+				</li>
+				<li class="site-menu__col">
+					<h3 class="site-menu__title">Футболки</h3>
+					<ul class="site-menu__list">
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Популярные</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Новинки</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Бестселлеры</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Специальные предложения</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Скоро в продаже</a>
+						</li>
+					</ul>
+				</li>
+				<li class="site-menu__col">
+					<h3 class="site-menu__title">Коллекция</h3>
+					<ul class="site-menu__list">
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Детская коллекция</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Женская коллекция</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Мужская коллекция</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Лучшее принты 2018 года</a>
+						</li>
+						<li class="site-menu__item">
+							<a href="" class="site-menu__link">Лучшее принты 2019 года</a>
+						</li>
+					</ul>
+				</li>
+				<li class="site-menu__col">
+					<h3 class="site-menu__title">Контактная информация</h3>
+					<div class="site-menu__text">
+						Нижний Новгород, <br>
+						ул.Ильинская, д. 65
+					</div>
+					<div class="site-menu__text">
+						<a href="tel.:+79867488029" class="site-menu__text-row">Телефон: 8 (986) 748-80-29</a>
+
+						<a href="mailto:i.shamshurov@mail.ru" class="site-menu__text-row">Email: i.shamshurov@mail.ru</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<section class="extras">
+			<div class="extras__col">
+				<a href="#" class="extras__best">Лучшие принты <br> 2019 года.</a>
+			</div>
+			<div class="extras__col">
+				<div class="extras__col-socials">
+					<ul class="socials">
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+									<svg class="socials__icon" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M12,0c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12Zm0,2c5.514,0 10,4.486 10,10c0,5.514 -4.486,10 -10,10c-5.514,0 -10,-4.486 -10,-10c0,-5.514 4.486,-10 10,-10Zm2.692,14.889c0.161,0.115 0.368,0.143 0.553,0.073c0.185,-0.07 0.322,-0.228 0.362,-0.42c0.435,-2.042 1.489,-7.211 1.884,-9.068c0.03,-0.14 -0.019,-0.285 -0.129,-0.379c-0.11,-0.093 -0.263,-0.12 -0.399,-0.07c-2.096,0.776 -8.553,3.198 -11.192,4.175c-0.168,0.062 -0.277,0.223 -0.271,0.4c0.006,0.177 0.125,0.33 0.296,0.381c1.184,0.354 2.738,0.847 2.738,0.847c0,0 0.725,2.193 1.104,3.308c0.047,0.139 0.157,0.25 0.301,0.287c0.145,0.038 0.298,-0.001 0.406,-0.103c0.608,-0.574 1.548,-1.461 1.548,-1.461c0,0 1.786,1.309 2.799,2.03Zm-5.505,-4.338l0.84,2.769l0.186,-1.754c0,0 3.243,-2.925 5.092,-4.593c0.055,-0.048 0.062,-0.13 0.017,-0.188c-0.045,-0.057 -0.126,-0.071 -0.188,-0.032c-2.143,1.368 -5.947,3.798 -5.947,3.798Z"/></svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<svg class="socials__icon" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.615 6h-9.23c-.766 0-1.385.62-1.385 1.384v9.23c0 .766.619 1.386 1.385 1.386h9.23c.766 0 1.385-.62 1.385-1.385v-9.23c0-.765-.619-1.385-1.385-1.385zm-4.615 3.693c1.274 0 2.309 1.032 2.309 2.307s-1.035 2.307-2.309 2.307-2.307-1.033-2.307-2.307 1.033-2.307 2.307-2.307zm4.5 6.346c0 .255-.207.461-.461.461h-8.078c-.254 0-.461-.207-.461-.461v-5.039h.949c-.045.158-.078.32-.102.486-.023.168-.038.339-.038.514 0 2.04 1.652 3.693 3.691 3.693s3.691-1.653 3.691-3.693c0-.174-.015-.346-.039-.514-.023-.166-.058-.328-.102-.486h.95v5.039zm0-6.991c0 .255-.207.462-.461.462h-1.088c-.256 0-.461-.208-.461-.462v-1.087c0-.255.205-.461.461-.461h1.088c.254 0 .461.207.461.461v1.087z"/></svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<svg class="socials__icon" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.581 15.997c.304 0 .429-.204.425-.458-.016-.958.356-1.474 1.03-.802.744.744.896 1.26 1.801 1.26h1.601c.403 0 .562-.13.562-.334 0-.432-.711-1.194-1.312-1.752-.844-.783-.882-.802-.156-1.744.9-1.169 2.079-2.667 1.037-2.667h-1.991c-.387 0-.414.217-.551.542-.498 1.173-1.443 2.693-1.803 2.461-.377-.243-.204-1.203-.175-2.63.008-.377.006-.636-.571-.77-.314-.073-.621-.103-.903-.103-1.137 0-1.922.477-1.477.56.785.146.711 1.846.527 2.58-.319 1.278-1.518-1.012-2.018-2.152-.12-.275-.155-.488-.586-.488h-1.627c-.247 0-.394.08-.394.258 0 .301 1.479 3.36 2.892 4.885 1.379 1.487 2.742 1.354 3.689 1.354z"/></svg> 
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<svg class="socials__icon" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M16.23 7.102c-2.002-.136-6.462-.135-8.461 0-2.165.148-2.419 1.456-2.436 4.898.017 3.436.27 4.75 2.437 4.898 1.999.135 6.459.136 8.461 0 2.165-.148 2.42-1.457 2.437-4.898-.018-3.436-.271-4.75-2.438-4.898zm-6.23 7.12v-4.444l4.778 2.218-4.778 2.226zm2-12.222c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"//></svg> 
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+
+</footer>
+
+</div>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="./scripts/sidebar-menu.js"></script>
+	<script src="./scripts/fade-slider.js"></script>
+	<script src="./scripts/filter.js"></script>
+</body>
+</html>
